@@ -66,7 +66,6 @@ def count_trainable_parameters(model):
 
 # Step 8 - trainable_fraction
 def trainable_fraction(trainable_count, total_count):
-    # TODO: return the fraction of parameters that are trainable.
     return trainable_count/total_count
 
 # Step 9 - build_instruction_examples
