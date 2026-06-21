@@ -52,7 +52,7 @@ from unsloth import FastLanguageModel
 
 def attach_lora_adapters(model, r=8, lora_alpha=16, target_modules=None):
     """Wrap the base model with LoRA adapters and return the PEFT model."""
-    # TODO: wrap `model` with LoRA via FastLanguageModel.get_peft_model using r, lora_alpha, target_modules
+   
     if target_modules is None:
         target_modules = get_lora_target_modules()
 
