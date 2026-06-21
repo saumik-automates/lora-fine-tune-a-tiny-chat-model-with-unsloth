@@ -27,7 +27,7 @@ from bitsandbytes.nn import Linear4bit
 
 def is_model_4bit_quantized(model):
     """Return True if any submodule of `model` is a bitsandbytes 4-bit linear layer."""
-    # TODO: walk the model's submodules and check for a bitsandbytes Linear4bit instance
+    # Walk the model's submodules and check for a bitsandbytes Linear4bit instance
     res = False
     for module in nn.Module.modules(model):
         res = res or isinstance(module, Linear4bit)
